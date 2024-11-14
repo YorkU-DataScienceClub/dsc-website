@@ -18,6 +18,17 @@
 .env.test.local
 .env.production.local
 
+
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ignore the .env file containing sensitive credentials
+/backend/.env
+
+#iGNORE THE CONFIG
+/backend/config
+
+#IGNORE NODE MODULES
+/backend/node_modules
