@@ -23,7 +23,7 @@ const Chatbot = () => {
     ]);
 
     try {
-     
+     // the issue might be with this as there might be a CORS issue which i said in the meeting
       const response = await axios.post('http://localhost:5001/api/dialogflow', { message });// here we are trying to get response from the API but for some reason aint working
 // also we use axios.post wich is the  function from axios library to send a post request to the API
    // first is the url of the API and the second is the data that we are sending to the API
@@ -32,7 +32,7 @@ const Chatbot = () => {
     
       setChatHistory((prevHistory) => [// now we have botht the user message and the bot reply so we add it to the chat history
         ...prevHistory, 
-        { text: message, sender: 'user' },
+      //  { text: message, sender: 'user' },// removed this as i already added preiously
         { text: botReply, sender: 'bot' }
       ]);
     } catch (error) {
@@ -57,7 +57,7 @@ const Chatbot = () => {
           type="text"
           value={message}
           onChange={handleMessageChange}
-          placeholder="Ask away "
+          placeholder="Ask away"
         />
         <button onClick={handleSendMessage}>Send</button>
       </div>
