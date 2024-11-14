@@ -14,6 +14,9 @@ import TeamSection from './components/TeamSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
+//z chatbot it
+import Chatbot from './components/Chatbot';
+
 function App() {
   useEffect(() => {
     // Initialize AOS animations
@@ -48,6 +51,8 @@ function App() {
       <TeamSection />
       <ContactSection />
       <Footer />
+
+      <Chatbot/>
     </div>
   );
 }
