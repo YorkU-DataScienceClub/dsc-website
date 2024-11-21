@@ -49,7 +49,7 @@ const Chatbot = () => {
       {isOpen && (
         <div className="chatbot-container">
           <div className="chat-header">
-            AI Chatbot
+            DataBot
             <button className="close-btn" onClick={handleToggleChatbot}>✖</button>
           </div>
           <div className="chat-history">
