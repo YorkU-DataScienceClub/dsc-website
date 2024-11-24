@@ -1,0 +1,7 @@
+# Ignore sensitive files in backend
+backend/config/
+
+backend/.env
+
+# Ignore backend node_modules
+backend/node_modules/
