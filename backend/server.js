@@ -21,7 +21,7 @@ app.use(bodyParser.json()); //parses incoming JSON payloads such as the one on P
 
 
 
-const sessionClient = new SessionsClient();//dialogflow session client ued to communicate with the API of Dialogflow
+const sessionClient = new SessionsClient();//dialogflow session client used to communicate with the API of Dialogflow
 const projectId = 'databot-eswl';  // when you go to the dashboard you will see the projectID there
 
 
