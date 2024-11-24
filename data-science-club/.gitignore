@@ -33,7 +33,7 @@ yarn-error.log*
 #IGNORE NODE MODULES
 /backend/node_modules
 
-
+backend/config/databot-eswl-70b8771f12ed.json
 Desktop/
 LandingPage/
 NetBeansProjects/
