@@ -24,7 +24,7 @@ const Chatbot = () => {
     ]);
 
     try {
-      const response = await axios.post('http://localhost:5001/api/dialogflow', { message });
+      const response = await axios.post('https://dsc-website.onrender.com/api/dialogflow', { message });
       const botReply = response.data.reply;
 
       setChatHistory((prevHistory) => [
