@@ -261,8 +261,76 @@ body {
   color: var(--text-color);
 }
 
+/* Footer Styling */
+.footer {
+  background-color: rgb(15, 15, 38);
+  color: var(--text-color);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1rem;
+  animation: fadeIn 2s ease;
+}
 
-/* Animation (Hero Section) */
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer-title {
+  margin-bottom: 30px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.social-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+  margin-bottom: 20px;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.linktree-text {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.linktree-link {
+  color: var(--text-color);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.linktree-link:hover {
+  color: var(--secondary-color);
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
 
 .hero-animation {
   position: absolute;
@@ -281,18 +349,6 @@ body {
   border-radius: 50%;
   background-color: var(--accent-color);
   animation: moveAround 10s linear infinite;
-}
-
-
-
-/* Footer */
-footer {
-  background-color: var(--primary-color);
-  color: var(--text-color);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 1rem;
-  animation: fadeIn 2s ease;
 }
 
 /* Keyframes for Animations */
